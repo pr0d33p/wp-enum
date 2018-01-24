@@ -1,1 +1,3 @@
-# wpenum
+This Tool Will Try To Collect User,Superuser & Admin User's Details Of Targeted Wordpress Site For You. Details Like User's Photo, Possible Username, Full Name, Author Detail Etc
+
+*Donot Use For Illegal Purpose Or On Unauthorized Sites...
