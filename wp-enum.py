@@ -27,13 +27,13 @@ def start():
 		url = input(r"%s Target Site : %s" %(B, G))
 
 		r = requests.get(url+"/wp-json/wp/v2/users")
-		print(r.url)
+		# print(r.url)
 		data = r.text
 		output = json.loads(data)
 
 		print ("\n\n%s_______________________| %sGrabbed Information%s |________________________%s\n\t\t" %(B, G, B, G))
 
-		if "rest_user_cannot_view" in output["code"] :
+		if "rest_user_cannot_view" in r.text :
 			print(output["message"])
 		else:
 			for loop in output:
